@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF3BF3C5193FF97500B0DCB7 /* SSLSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF3BF3C3193FF97400B0DCB7 /* SSLSocket.cpp */; };
+		CF3BF3C71940438500B0DCB7 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3BF3C61940438500B0DCB7 /* libssl.dylib */; };
+		CFCF711B1925A136009A53D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCF711A1925A136009A53D3 /* Cocoa.framework */; };
+		CFCF71251925A136009A53D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71231925A136009A53D3 /* InfoPlist.strings */; };
+		CFCF71271925A136009A53D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF71261925A136009A53D3 /* main.m */; };
+		CFCF712B1925A136009A53D3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71291925A136009A53D3 /* Credits.rtf */; };
+		CFCF712E1925A136009A53D3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFCF712D1925A136009A53D3 /* AppDelegate.mm */; };
+		CFCF71311925A136009A53D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCF712F1925A136009A53D3 /* MainMenu.xib */; };
+		CFCF71331925A136009A53D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71321925A136009A53D3 /* Images.xcassets */; };
+		CFCF713A1925A136009A53D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCF71391925A136009A53D3 /* XCTest.framework */; };
+		CFCF713B1925A136009A53D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCF711A1925A136009A53D3 /* Cocoa.framework */; };
+		CFCF71431925A136009A53D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71411925A136009A53D3 /* InfoPlist.strings */; };
+		CFCF71451925A136009A53D3 /* PushTestToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF71441925A136009A53D3 /* PushTestToolTests.m */; };
+		CFCF71501925A36F009A53D3 /* ioSock.c in Sources */ = {isa = PBXBuildFile; fileRef = CFCF714E1925A36F009A53D3 /* ioSock.c */; };
+		CFCF71531925A4B3009A53D3 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71521925A4B3009A53D3 /* icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFCF713C1925A136009A53D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCF710F1925A136009A53D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCF71161925A136009A53D3;
+			remoteInfo = PushTestTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF3BF3C3193FF97400B0DCB7 /* SSLSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSLSocket.cpp; sourceTree = "<group>"; };
+		CF3BF3C4193FF97400B0DCB7 /* SSLSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLSocket.h; sourceTree = "<group>"; };
+		CF3BF3C61940438500B0DCB7 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		CFCF71171925A136009A53D3 /* PushTestTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTestTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF711A1925A136009A53D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CFCF711D1925A136009A53D3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CFCF711E1925A136009A53D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFCF711F1925A136009A53D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFCF71221925A136009A53D3 /* PushTestTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushTestTool-Info.plist"; sourceTree = "<group>"; };
+		CFCF71241925A136009A53D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFCF71261925A136009A53D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFCF71281925A136009A53D3 /* PushTestTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushTestTool-Prefix.pch"; sourceTree = "<group>"; };
+		CFCF712A1925A136009A53D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CFCF712C1925A136009A53D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFCF712D1925A136009A53D3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CFCF71301925A136009A53D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CFCF71321925A136009A53D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFCF71381925A136009A53D3 /* PushTestToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushTestToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF71391925A136009A53D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CFCF71401925A136009A53D3 /* PushTestToolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushTestToolTests-Info.plist"; sourceTree = "<group>"; };
+		CFCF71421925A136009A53D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFCF71441925A136009A53D3 /* PushTestToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushTestToolTests.m; sourceTree = "<group>"; };
+		CFCF714E1925A36F009A53D3 /* ioSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioSock.c; sourceTree = "<group>"; };
+		CFCF714F1925A36F009A53D3 /* ioSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioSock.h; sourceTree = "<group>"; };
+		CFCF71521925A4B3009A53D3 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFCF71141925A136009A53D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BF3C71940438500B0DCB7 /* libssl.dylib in Frameworks */,
+				CFCF711B1925A136009A53D3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF71351925A136009A53D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF713B1925A136009A53D3 /* Cocoa.framework in Frameworks */,
+				CFCF713A1925A136009A53D3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFCF710E1925A136009A53D3 = {
+			isa = PBXGroup;
+			children = (
+				CFCF71201925A136009A53D3 /* PushTestTool */,
+				CFCF713E1925A136009A53D3 /* PushTestToolTests */,
+				CFCF71191925A136009A53D3 /* Frameworks */,
+				CFCF71181925A136009A53D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFCF71181925A136009A53D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF71171925A136009A53D3 /* PushTestTool.app */,
+				CFCF71381925A136009A53D3 /* PushTestToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFCF71191925A136009A53D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BF3C61940438500B0DCB7 /* libssl.dylib */,
+				CFCF711A1925A136009A53D3 /* Cocoa.framework */,
+				CFCF71391925A136009A53D3 /* XCTest.framework */,
+				CFCF711C1925A136009A53D3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCF711C1925A136009A53D3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF711D1925A136009A53D3 /* AppKit.framework */,
+				CFCF711E1925A136009A53D3 /* CoreData.framework */,
+				CFCF711F1925A136009A53D3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CFCF71201925A136009A53D3 /* PushTestTool */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BF3C3193FF97400B0DCB7 /* SSLSocket.cpp */,
+				CF3BF3C4193FF97400B0DCB7 /* SSLSocket.h */,
+				CFCF714E1925A36F009A53D3 /* ioSock.c */,
+				CFCF714F1925A36F009A53D3 /* ioSock.h */,
+				CFCF712C1925A136009A53D3 /* AppDelegate.h */,
+				CFCF712D1925A136009A53D3 /* AppDelegate.mm */,
+				CFCF712F1925A136009A53D3 /* MainMenu.xib */,
+				CFCF71321925A136009A53D3 /* Images.xcassets */,
+				CFCF71211925A136009A53D3 /* Supporting Files */,
+			);
+			path = PushTestTool;
+			sourceTree = "<group>";
+		};
+		CFCF71211925A136009A53D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF71511925A4B3009A53D3 /* res */,
+				CFCF71221925A136009A53D3 /* PushTestTool-Info.plist */,
+				CFCF71231925A136009A53D3 /* InfoPlist.strings */,
+				CFCF71261925A136009A53D3 /* main.m */,
+				CFCF71281925A136009A53D3 /* PushTestTool-Prefix.pch */,
+				CFCF71291925A136009A53D3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFCF713E1925A136009A53D3 /* PushTestToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF71441925A136009A53D3 /* PushTestToolTests.m */,
+				CFCF713F1925A136009A53D3 /* Supporting Files */,
+			);
+			path = PushTestToolTests;
+			sourceTree = "<group>";
+		};
+		CFCF713F1925A136009A53D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF71401925A136009A53D3 /* PushTestToolTests-Info.plist */,
+				CFCF71411925A136009A53D3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFCF71511925A4B3009A53D3 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF71521925A4B3009A53D3 /* icon.icns */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFCF71161925A136009A53D3 /* PushTestTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCF71481925A136009A53D3 /* Build configuration list for PBXNativeTarget "PushTestTool" */;
+			buildPhases = (
+				CFCF71131925A136009A53D3 /* Sources */,
+				CFCF71141925A136009A53D3 /* Frameworks */,
+				CFCF71151925A136009A53D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushTestTool;
+			productName = PushTestTool;
+			productReference = CFCF71171925A136009A53D3 /* PushTestTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFCF71371925A136009A53D3 /* PushTestToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCF714B1925A136009A53D3 /* Build configuration list for PBXNativeTarget "PushTestToolTests" */;
+			buildPhases = (
+				CFCF71341925A136009A53D3 /* Sources */,
+				CFCF71351925A136009A53D3 /* Frameworks */,
+				CFCF71361925A136009A53D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFCF713D1925A136009A53D3 /* PBXTargetDependency */,
+			);
+			name = PushTestToolTests;
+			productName = PushTestToolTests;
+			productReference = CFCF71381925A136009A53D3 /* PushTestToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFCF710F1925A136009A53D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Fish;
+				TargetAttributes = {
+					CFCF71371925A136009A53D3 = {
+						TestTargetID = CFCF71161925A136009A53D3;
+					};
+				};
+			};
+			buildConfigurationList = CFCF71121925A136009A53D3 /* Build configuration list for PBXProject "PushTestTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFCF710E1925A136009A53D3;
+			productRefGroup = CFCF71181925A136009A53D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFCF71161925A136009A53D3 /* PushTestTool */,
+				CFCF71371925A136009A53D3 /* PushTestToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFCF71151925A136009A53D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF71531925A4B3009A53D3 /* icon.icns in Resources */,
+				CFCF71251925A136009A53D3 /* InfoPlist.strings in Resources */,
+				CFCF71331925A136009A53D3 /* Images.xcassets in Resources */,
+				CFCF712B1925A136009A53D3 /* Credits.rtf in Resources */,
+				CFCF71311925A136009A53D3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF71361925A136009A53D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF71431925A136009A53D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFCF71131925A136009A53D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF71501925A36F009A53D3 /* ioSock.c in Sources */,
+				CF3BF3C5193FF97500B0DCB7 /* SSLSocket.cpp in Sources */,
+				CFCF712E1925A136009A53D3 /* AppDelegate.mm in Sources */,
+				CFCF71271925A136009A53D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF71341925A136009A53D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF71451925A136009A53D3 /* PushTestToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFCF713D1925A136009A53D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCF71161925A136009A53D3 /* PushTestTool */;
+			targetProxy = CFCF713C1925A136009A53D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFCF71231925A136009A53D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF71241925A136009A53D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFCF71291925A136009A53D3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF712A1925A136009A53D3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CFCF712F1925A136009A53D3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF71301925A136009A53D3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CFCF71411925A136009A53D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF71421925A136009A53D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFCF71461925A136009A53D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CFCF71471925A136009A53D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CFCF71491925A136009A53D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushTestTool/PushTestTool-Prefix.pch";
+				INFOPLIST_FILE = "PushTestTool/PushTestTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFCF714A1925A136009A53D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushTestTool/PushTestTool-Prefix.pch";
+				INFOPLIST_FILE = "PushTestTool/PushTestTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFCF714C1925A136009A53D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PushTestTool.app/Contents/MacOS/PushTestTool";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushTestTool/PushTestTool-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PushTestToolTests/PushTestToolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CFCF714D1925A136009A53D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PushTestTool.app/Contents/MacOS/PushTestTool";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PushTestTool/PushTestTool-Prefix.pch";
+				INFOPLIST_FILE = "PushTestToolTests/PushTestToolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFCF71121925A136009A53D3 /* Build configuration list for PBXProject "PushTestTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF71461925A136009A53D3 /* Debug */,
+				CFCF71471925A136009A53D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCF71481925A136009A53D3 /* Build configuration list for PBXNativeTarget "PushTestTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF71491925A136009A53D3 /* Debug */,
+				CFCF714A1925A136009A53D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCF714B1925A136009A53D3 /* Build configuration list for PBXNativeTarget "PushTestToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF714C1925A136009A53D3 /* Debug */,
+				CFCF714D1925A136009A53D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFCF710F1925A136009A53D3 /* Project object */;
+}
