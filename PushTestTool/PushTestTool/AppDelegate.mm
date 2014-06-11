@@ -67,7 +67,7 @@
     ssl_socket->closeSSL();
     ssl_socket->initSSL((char*)[self.certificatePath UTF8String],
                         (char*)[self.keyPath UTF8String],
-                        "1234");
+                        (char*)[self.pwdTextField.stringValue UTF8String]);
     ssl_socket->connectSSL((char*)[servername UTF8String], port);
     
     //ssl_socket->initSSL((char*)[self.certificatePath UTF8String], "2", NULL);
