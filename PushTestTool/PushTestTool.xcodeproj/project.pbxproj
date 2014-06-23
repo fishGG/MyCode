@@ -20,7 +20,6 @@
 		CFCF713B1925A136009A53D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCF711A1925A136009A53D3 /* Cocoa.framework */; };
 		CFCF71431925A136009A53D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71411925A136009A53D3 /* InfoPlist.strings */; };
 		CFCF71451925A136009A53D3 /* PushTestToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF71441925A136009A53D3 /* PushTestToolTests.m */; };
-		CFCF71501925A36F009A53D3 /* ioSock.c in Sources */ = {isa = PBXBuildFile; fileRef = CFCF714E1925A36F009A53D3 /* ioSock.c */; };
 		CFCF71531925A4B3009A53D3 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CFCF71521925A4B3009A53D3 /* icon.icns */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +56,6 @@
 		CFCF71401925A136009A53D3 /* PushTestToolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushTestToolTests-Info.plist"; sourceTree = "<group>"; };
 		CFCF71421925A136009A53D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFCF71441925A136009A53D3 /* PushTestToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushTestToolTests.m; sourceTree = "<group>"; };
-		CFCF714E1925A36F009A53D3 /* ioSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioSock.c; sourceTree = "<group>"; };
-		CFCF714F1925A36F009A53D3 /* ioSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioSock.h; sourceTree = "<group>"; };
 		CFCF71521925A4B3009A53D3 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,8 +126,6 @@
 			children = (
 				CF3BF3C3193FF97400B0DCB7 /* SSLSocket.cpp */,
 				CF3BF3C4193FF97400B0DCB7 /* SSLSocket.h */,
-				CFCF714E1925A36F009A53D3 /* ioSock.c */,
-				CFCF714F1925A36F009A53D3 /* ioSock.h */,
 				CFCF712C1925A136009A53D3 /* AppDelegate.h */,
 				CFCF712D1925A136009A53D3 /* AppDelegate.mm */,
 				CFCF712F1925A136009A53D3 /* MainMenu.xib */,
@@ -278,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCF71501925A36F009A53D3 /* ioSock.c in Sources */,
 				CF3BF3C5193FF97500B0DCB7 /* SSLSocket.cpp in Sources */,
 				CFCF712E1925A136009A53D3 /* AppDelegate.mm in Sources */,
 				CFCF71271925A136009A53D3 /* main.m in Sources */,
