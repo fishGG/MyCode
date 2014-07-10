@@ -35,7 +35,6 @@ void SSLSocket::initSSL(char* cert, char* key,char* password)
     SSL_CTX_set_default_passwd_cb_userdata(ctx, password);
     //加载本地证书文件
     int status = SSL_CTX_use_certificate_file(ctx, cert, SSL_FILETYPE_PEM);
-    
     if (status <= 0) {
         printf("Use cert fail, status=%d\n", status);
         goto error;

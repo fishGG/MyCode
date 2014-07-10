@@ -12,7 +12,7 @@
 @implementation AppDelegate
 
 @synthesize certTextField;
-@synthesize keyTextField;
+//@synthesize keyTextField;
 @synthesize pwdTextField;
 @synthesize dtTextField;
 @synthesize plTextField;
@@ -236,11 +236,13 @@
     if (clicked == NSFileHandlingPanelOKButton)
     {
         self.certificatePath = [[[panel URL] description] stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+        self.keyPath = self.certificatePath;
         [certTextField setStringValue:self.certificatePath];
     }
 }
 
 //选择密钥文件
+/*
 -(IBAction)selectKeyPath:(id)sender
 {
     //文件对话框
@@ -260,7 +262,8 @@
         [keyTextField setStringValue:self.keyPath];
     }
 }
-
+*/
+ 
 //发送push
 -(IBAction)sendPushMessage:(id)sender
 {

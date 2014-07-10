@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
@@ -11,7 +11,6 @@
             <connections>
                 <outlet property="certTextField" destination="sIX-8R-Aon" id="eSx-HR-2v9"/>
                 <outlet property="dtTextField" destination="JF9-RB-jqI" id="Gb4-LO-I4I"/>
-                <outlet property="keyTextField" destination="Wal-A1-Epq" id="3V2-PL-28N"/>
                 <outlet property="plTextField" destination="2dt-Hq-lJD" id="CKP-Wj-Ww7"/>
                 <outlet property="pwdTextField" destination="l24-i7-Fae" id="ZNu-OD-Elw"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -271,14 +270,14 @@
         <window title="iOS推送测试工具" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="515" y="399" width="460" height="321"/>
+            <rect key="contentRect" x="515" y="399" width="460" height="295"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="460" height="321"/>
+                <rect key="frame" x="0.0" y="0.0" width="460" height="295"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elh-aX-Mlp">
-                        <rect key="frame" x="21" y="50" width="76" height="40"/>
+                        <rect key="frame" x="21" y="56" width="76" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         <size key="cellSize" width="74" height="18"/>
@@ -304,7 +303,7 @@
                         </connections>
                     </matrix>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIX-8R-Aon">
-                        <rect key="frame" x="104" y="279" width="336" height="22"/>
+                        <rect key="frame" x="120" y="253" width="320" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="zQV-WE-BOH">
                             <font key="font" metaFont="system"/>
@@ -312,30 +311,10 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-A1-Epq">
-                        <rect key="frame" x="104" y="247" width="336" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="NGJ-iF-IX2">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4h-yN-k44">
-                        <rect key="frame" x="15" y="240" width="81" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="选择密钥" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fdQ-Sa-weF">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="selectKeyPath:" target="Voe-Tx-rLC" id="8bW-yf-Di0"/>
-                        </connections>
-                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHG-af-f5a">
-                        <rect key="frame" x="14" y="273" width="82" height="32"/>
+                        <rect key="frame" x="4" y="247" width="114" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="选择证书" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OHD-3h-Fwt">
+                        <buttonCell key="cell" type="push" title="证书密钥(PEM)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OHD-3h-Fwt">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -344,7 +323,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qv6-tw-n66">
-                        <rect key="frame" x="18" y="184" width="121" height="17"/>
+                        <rect key="frame" x="18" y="190" width="121" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DeviceToken" id="o1x-QU-ZjO">
                             <font key="font" metaFont="cellTitle"/>
@@ -353,7 +332,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JF9-RB-jqI">
-                        <rect key="frame" x="104" y="181" width="336" height="22"/>
+                        <rect key="frame" x="104" y="187" width="336" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="fm6-8K-C9L">
                             <font key="font" metaFont="system"/>
@@ -371,7 +350,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jG8-be-ayq">
-                        <rect key="frame" x="175" y="19" width="110" height="25"/>
+                        <rect key="frame" x="175" y="25" width="110" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="squareTextured" title="发送推送" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RIW-O2-uhA">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -382,7 +361,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ch6-jT-cFF">
-                        <rect key="frame" x="19" y="156" width="63" height="17"/>
+                        <rect key="frame" x="19" y="162" width="63" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="推送内容" id="pkJ-JV-XxB">
                             <font key="font" metaFont="system"/>
@@ -391,7 +370,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-Hq-lJD">
-                        <rect key="frame" x="104" y="52" width="336" height="120"/>
+                        <rect key="frame" x="104" y="58" width="336" height="120"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="{&quot;aps&quot;:{&quot;alert&quot;:&quot;This message from PushTestTool.&quot;}}" drawsBackground="YES" id="etk-dS-0mm">
                             <font key="font" metaFont="system"/>
@@ -400,16 +379,16 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-na-biT">
-                        <rect key="frame" x="19" y="217" width="67" height="17"/>
+                        <rect key="frame" x="19" y="223" width="67" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密钥密码" id="ZL4-Q9-1HY">
-                            <font key="font" metaFont="titleBar" size="12"/>
+                            <font key="font" metaFont="cellTitle"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l24-i7-Fae">
-                        <rect key="frame" x="104" y="214" width="336" height="22"/>
+                        <rect key="frame" x="104" y="220" width="336" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8Bu-5s-xjg">
                             <font key="font" metaFont="system"/>

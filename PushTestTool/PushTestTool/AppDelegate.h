@@ -30,7 +30,7 @@
 
 @property (assign) IBOutlet NSWindow*    window;
 @property (assign) IBOutlet NSTextField* certTextField;
-@property (assign) IBOutlet NSTextField* keyTextField;
+//@property (assign) IBOutlet NSTextField* keyTextField;
 @property (assign) IBOutlet NSTextField* pwdTextField;
 @property (assign) IBOutlet NSTextField* dtTextField;
 @property (assign) IBOutlet NSTextField* plTextField;
