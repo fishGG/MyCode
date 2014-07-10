@@ -218,13 +218,24 @@
 	NSLog(@"SSLWrite(): %d %zu", result, processed);
     */
     
-    
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert addButtonWithTitle:@"确定"];
-    [alert setMessageText:@"推送成功！"];
-    [alert setInformativeText:[NSString stringWithFormat:@"推送到设备【%@】成功！",deviceToken]];
-    [alert setAlertStyle:NSWarningAlertStyle];
-    [alert beginSheetModalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+    if(ret > 0)
+    {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"确定"];
+        [alert setMessageText:@"推送成功！"];
+        [alert setInformativeText:[NSString stringWithFormat:@"推送到设备【%@】成功！",deviceToken]];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert beginSheetModalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+    }
+    else
+    {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"确定"];
+        [alert setMessageText:@"推送失败！"];
+        [alert setInformativeText:[NSString stringWithFormat:@"推送到设备【%@】失败！",deviceToken]];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert beginSheetModalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+    }
 }
 
 //选择证书文件
